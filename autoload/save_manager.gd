@@ -6,6 +6,7 @@ const SAVE_DIR := "user://saves"
 const META_PATH := "user://branch_tree.json"
 
 var branch_meta: Dictionary = {}   # branch_id -> {title, time, snapshot}
+var loop_count: int = 0            # 已完成周目数
 var ending_meta: Dictionary = {}   # ending_id -> {title, time}
 
 func _ready() -> void:
@@ -71,13 +72,18 @@ func load_meta() -> void:
 	if d is Dictionary:
 		branch_meta = d.get("branches", {})
 		ending_meta = d.get("endings", {})
+		loop_count = int(d.get("loop_count", 0))
 
 func save_meta() -> void:
 	var f := FileAccess.open(META_PATH, FileAccess.WRITE)
 	if f == null:
 		return
-	f.store_string(JSON.stringify({"branches": branch_meta, "endings": ending_meta}, "\t"))
+	f.store_string(JSON.stringify({"branches": branch_meta, "endings": ending_meta, "loop_count": loop_count}, "\t"))
 	f.close()
+
+func record_loop() -> void:
+	loop_count += 1
+	save_meta()
 
 func unlock_branch(id: String, title: String, snap: Dictionary) -> void:
 	if branch_meta.has(id):

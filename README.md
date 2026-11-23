@@ -3,6 +3,13 @@
 表面是恋爱 galgame，背后是悬疑：一周目必死，二周目回环，三周目破局。
 本仓库是 **可运行的剧情骨架**（第一章 demo），剧情按「事件」组织，重点在引擎与模块。
 
+## 设定档案与周目（2026-11 新增）
+
+- `data/lore/entries.json`：世界观条目，每条带 `loop_required`（解锁周目）。标题界面「设定档案」按周目显示全文或锁定提示。
+- **第 5 周目**解锁「恶意存在」条目：一切之机器、反存在、超文明湮灭。
+- 周目计数存在 `user://branch_tree.json` 的 `loop_count`，每次抵达结局自动 +1；新周目开局读它。
+- 第 5 周目起，事件流会先触发 `e00_union`（联合会档案），再进入「既视感」版上岛。
+
 ## 事件系统（2026-11 新增）
 
 - `data/events/*.json`：事件流。每个事件带 `time_slots / loop / location / requires / affinity_min` 触发条件，
@@ -40,6 +47,7 @@ Donglai/
 │   ├── game_screen.gd     # 舞台 + 字幕 + 选项 + 存读档 + 日志 + 调试面板
 │   └── branch_tree_screen.gd  # 分支树 + 结局一览
 ├── data/
+│   ├── lore/entries.json      # 设定档案（按周目解锁）
 │   ├── events/chapter1.json   # 第一章事件（上岛）
 │   ├── story/prologue.json    # 序章剧本（由 tools/build_story.py 生成）
 │   ├── characters.json        # 20 个角色的登记表（名字/类型/主题色）

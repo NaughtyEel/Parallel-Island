@@ -25,6 +25,8 @@ func reset() -> void:
 	node_index = 0
 	event_id = ""
 	loop = 1
+	if Saves != null:
+		loop = Saves.loop_count + 1
 	time_slot = "morning"
 	location = "ferry"
 	seen_events = []

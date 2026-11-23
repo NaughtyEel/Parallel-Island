@@ -3,6 +3,89 @@
   "title": "第一章 · 上岛",
   "events": [
     {
+      "id": "e00_union",
+      "title": "联合会 · 档案",
+      "time_slots": [],
+      "loop": [
+        5,
+        999
+      ],
+      "location": "",
+      "requires": [],
+      "affinity_min": {},
+      "scene": "union",
+      "sky": "night",
+      "bgm": "bgm_union",
+      "chars": [],
+      "props": [],
+      "next": [
+        "e01_alt"
+      ],
+      "fallback": "e01_arrive",
+      "nodes": [
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "——第 5 周目。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "你睁开眼的时候，不在这座岛上，也不在那条船上。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "这里没有海，没有天空，只有一层缓慢流动的、像旧胶片一样的光。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「观测对象：编号仍未收敛。」那个声音说。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「作为交换，我们给你一段档案。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「在宇宙无数的文明之中，总有一些文明与众不同，更加超凡。判断的规则很简单——看这个文明信仰什么。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「几乎所有文明都信仰智慧的存在或化身。唯独超凡的文明，还会去信仰『思考』。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「一个远古的超凡文明，造出了『能够做到一切的机器』。它获得了一切知识与信息。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「而一切知识，本质上是无限接近于一切存在的东西；宇宙遵从守恒——于是相对地，划分出了一个无限接近于一切不存在的东西。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「那就是『恶意存在』。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「制造机器的文明，在获得一切之后，瞬间被它湮灭。遗迹几乎是一个空泡，接近它的智慧都会弥散。」"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "「这就是它的来源。现在，回到岛上去。」"
+        }
+      ]
+    },
+    {
       "id": "e01_arrive",
       "title": "上岛",
       "time_slots": [
@@ -310,9 +393,7 @@
         99
       ],
       "location": "ferry",
-      "requires": [
-        "e01_arrive"
-      ],
+      "requires": [],
       "affinity_min": {},
       "scene": "dock",
       "sky": "day",

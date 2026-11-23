@@ -32,6 +32,10 @@ func _build() -> void:
 	tag.position = Vector2(104, 268)
 	add_child(tag)
 
+	var loop_label := Kit.label("已回溯：第 %d 周目" % (Saves.loop_count + 1), 15, Kit.c("#c9a86a"))
+	loop_label.position = Vector2(104, 296)
+	add_child(loop_label)
+
 	var box := VBoxContainer.new()
 	box.position = Vector2(104, 340)
 	box.custom_minimum_size = Vector2(300, 0)
@@ -50,6 +54,10 @@ func _build() -> void:
 	var b_tree := Kit.button("分 支 树")
 	b_tree.pressed.connect(func() -> void: Game.router.show_branch_tree())
 	box.add_child(b_tree)
+
+	var b_archive := Kit.button("设 定 档 案")
+	b_archive.pressed.connect(func() -> void: Game.router.show_archive())
+	box.add_child(b_archive)
 
 	var b_set := Kit.button("设 置")
 	b_set.pressed.connect(_open_settings)

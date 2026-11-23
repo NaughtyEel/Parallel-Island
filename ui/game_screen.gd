@@ -31,6 +31,7 @@ var _auto := false
 var _skip := false
 var _auto_acc := 0.0
 var _ending_open := false
+var _loop_recorded := false
 var _dev_panel: Control = null
 
 func _ready() -> void:
@@ -403,6 +404,9 @@ func _on_branch(_id: String, title: String) -> void:
 
 func _on_ending(_id: String, title: String, text: String) -> void:
 	_ending_open = true
+	if not _loop_recorded:
+		_loop_recorded = true
+		Saves.record_loop()
 	_auto = false
 	_overlay = Control.new()
 	Kit.full(_overlay)
