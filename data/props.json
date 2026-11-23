@@ -1,0 +1,7 @@
+[
+  {"id": "guitar", "title": "电吉他", "color": "#c98b3c"},
+  {"id": "amp", "title": "音箱", "color": "#444a55"},
+  {"id": "wine", "title": "香槟", "color": "#d8c27a"},
+  {"id": "radio", "title": "收音机", "color": "#6b7a8f"},
+  {"id": "warship", "title": "军舰剪影", "color": "#7c8b95"}
+]

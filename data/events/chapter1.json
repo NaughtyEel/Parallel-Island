@@ -1,0 +1,374 @@
+{
+  "id": "prologue",
+  "title": "第一章 · 上岛",
+  "events": [
+    {
+      "id": "e01_arrive",
+      "title": "上岛",
+      "time_slots": [
+        "morning"
+      ],
+      "loop": [
+        1,
+        1
+      ],
+      "location": "ferry",
+      "requires": [],
+      "affinity_min": {},
+      "scene": "ferry",
+      "sky": "day",
+      "bgm": "bgm_sea",
+      "chars": [],
+      "props": [],
+      "next": [
+        "e02_dock"
+      ],
+      "fallback": "e01_alt",
+      "nodes": [
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "我加入了一个 B 站 UP 主「牢 J」的会员群。原因说出来有点丢人。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "我那时候觉得：抱着电吉他的男人，很帅。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "更丢人的是，我还认真幻想过——大学四年，靠一手吉他收获一些目光，最好再收获几个女孩子的。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "但我也得承认，正是这点俗气的念头，把我推进了这个群。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "群里的人都爱音乐。我们一起研究设备，互相发自己录的段子，半夜两三点还在聊音色。"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "laoj",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "牢 J",
+          "text": "今年不录视频了。都上岛，合奏。我包吃住。",
+          "char": "laoj"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "qianshi",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "茜师傅",
+          "text": "岛上的别墅是洋洋家的。别问多少钱，问就是「不值几个钱」。",
+          "char": "qianshi"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "wanjiang",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "小万",
+          "text": "真的假的？那我机票钱谁报销？",
+          "char": "wanjiang"
+        },
+        {
+          "type": "stage",
+          "chars": []
+        },
+        {
+          "type": "line",
+          "speaker": "狗王",
+          "text": "我琴头刚摔断过一次，这次不能再摔了。"
+        },
+        {
+          "type": "line",
+          "speaker": "8J",
+          "text": "带我一个，我负责拍。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "于是这趟旅行，从「各自录视频」变成了「一起上岛」。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "我还没意识到，这是今年最大的一件事，也是我人生里最不该忘记的一件事。"
+        },
+        {
+          "type": "stage",
+          "chars": []
+        },
+        {
+          "type": "choice",
+          "prompt": "上岛前，群里有人问：「新来的，你上岛是来干嘛的？」",
+          "options": [
+            {
+              "text": "「来学琴的。」",
+              "goto": "a",
+              "aff": {
+                "jiaoguan": 2
+              }
+            },
+            {
+              "text": "「来看看岛。」",
+              "goto": "b",
+              "aff": {
+                "yangyang": 2
+              }
+            },
+            {
+              "text": "「来吃席的。」",
+              "goto": "c",
+              "aff": {
+                "wanjiang": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "name": "a"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "jiaoguan",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "吉娘姐",
+          "text": "行，那这几天跟我对谱子。",
+          "char": "jiaoguan"
+        },
+        {
+          "type": "jump",
+          "goto": "merge"
+        },
+        {
+          "type": "label",
+          "name": "b"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "yangyang",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "洋洋",
+          "text": "那你可来对了。我的岛，很好看。",
+          "char": "yangyang"
+        },
+        {
+          "type": "jump",
+          "goto": "merge"
+        },
+        {
+          "type": "label",
+          "name": "c"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "wanjiang",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "小万",
+          "text": "吃席？那我得先去问一下厨师。",
+          "char": "wanjiang"
+        },
+        {
+          "type": "jump",
+          "goto": "merge"
+        },
+        {
+          "type": "label",
+          "name": "merge"
+        },
+        {
+          "type": "stage",
+          "chars": []
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "船靠岸的时候，海面上停着一艘很奇怪的军舰。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "它安静地浮在雾里，比我见过的任何一条船都高，桅杆的轮廓也不对。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "我当时只是觉得——它不像新闻里的那些船。"
+        },
+        {
+          "type": "branch",
+          "id": "b_arrive",
+          "title": "序章 · 上岛"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "而今年，事情和往年都不一样。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "这是后来我在很多个「再来一次」里，反复想起的一天。"
+        }
+      ]
+    },
+    {
+      "id": "e01_alt",
+      "title": "上岛（既视感）",
+      "time_slots": [
+        "morning"
+      ],
+      "loop": [
+        2,
+        99
+      ],
+      "location": "ferry",
+      "requires": [],
+      "affinity_min": {},
+      "scene": "ferry",
+      "sky": "day",
+      "bgm": "bgm_sea",
+      "chars": [],
+      "props": [],
+      "next": [
+        "e02_dock"
+      ],
+      "fallback": "",
+      "nodes": [
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "又是这条船。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "海面、雾、那艘军舰的位置，连浪声都和记忆里一模一样。"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "你已经知道，接下来会发生什么。"
+        }
+      ]
+    },
+    {
+      "id": "e02_dock",
+      "title": "抵达码头",
+      "time_slots": [
+        "morning"
+      ],
+      "loop": [
+        1,
+        99
+      ],
+      "location": "ferry",
+      "requires": [
+        "e01_arrive"
+      ],
+      "affinity_min": {},
+      "scene": "dock",
+      "sky": "day",
+      "bgm": "bgm_villa",
+      "chars": [],
+      "props": [],
+      "next": [],
+      "fallback": "",
+      "nodes": [
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "渡轮靠上码头的时候，先闻到的是海腥味，然后是别墅里飘出来的木头和漆的味道。"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "yangyang",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "洋洋",
+          "text": "欢迎来到我的小岛。行李交给管家就行。",
+          "char": "yangyang"
+        },
+        {
+          "type": "stage",
+          "chars": [
+            {
+              "id": "qianshi",
+              "slot": "center"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "speaker": "茜师傅",
+          "text": "别磨蹭！器材先搬进排练厅，晚上就要合一遍。",
+          "char": "qianshi"
+        },
+        {
+          "type": "branch",
+          "id": "b_dock",
+          "title": "抵达 · 别墅"
+        },
+        {
+          "type": "line",
+          "speaker": "旁白",
+          "text": "（第一章 · 上岛 完）"
+        }
+      ],
+      "arrive_location": "dock"
+    }
+  ]
+}

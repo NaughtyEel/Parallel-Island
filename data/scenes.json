@@ -1,0 +1,44 @@
+[
+  {
+    "id": "island_day",
+    "title": "东莱岛 · 白天",
+    "sky": "#79b8ff",
+    "bg": "#cfe4ff"
+  },
+  {
+    "id": "island_dusk",
+    "title": "东莱岛 · 黄昏",
+    "sky": "#ff9a6b",
+    "bg": "#5b3a5e"
+  },
+  {
+    "id": "quake_red",
+    "title": "地震 · 赤色天穹",
+    "sky": "#8c1f1f",
+    "bg": "#2a0d0d"
+  },
+  {
+    "id": "villa_night",
+    "title": "别墅 · 深夜",
+    "sky": "#2b3550",
+    "bg": "#10131c"
+  },
+  {
+    "id": "warship",
+    "title": "搁浅军舰 · 甲板",
+    "sky": "#3d4a52",
+    "bg": "#1c2329"
+  },
+  {
+    "id": "ferry",
+    "title": "渡轮 · 海上",
+    "sky": "#8ec5ff",
+    "bg": "#c2ddf2"
+  },
+  {
+    "id": "dock",
+    "title": "码头 · 登岛",
+    "sky": "#9cc6f0",
+    "bg": "#d9e6d2"
+  }
+]

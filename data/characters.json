@@ -1,0 +1,22 @@
+[
+  {"id": "leila", "name": "后备箱", "type": "假小子·电焊工", "color": "#e08a4a", "on_island": true, "role": "romance"},
+  {"id": "aja", "name": "副驾驶", "type": "冷面少女", "color": "#8fb6d9", "on_island": true, "role": "support"},
+  {"id": "wanjiang", "name": "小万", "type": "萝莉·氪金妖精", "color": "#f39ab6", "on_island": true, "role": "support"},
+  {"id": "kuangfeng", "name": "八级大狂风", "type": "大姐姐·中二和风", "color": "#c25a5a", "on_island": true, "role": "suspect"},
+  {"id": "yangyang", "name": "洋洋", "type": "男娘·富家千金", "color": "#e6cf9a", "on_island": true, "role": "romance"},
+  {"id": "jiaoguan", "name": "吉娘姐", "type": "大姐姐·知性", "color": "#7f9bc4", "on_island": true, "role": "romance"},
+  {"id": "tongzhi", "name": "副驾驶回应了你的消息", "type": "无口少女", "color": "#c9d2d8", "on_island": false, "role": "cameo"},
+  {"id": "jjiang", "name": "8J", "type": "假小子·微胖", "color": "#a8b06a", "on_island": false, "role": "cameo"},
+  {"id": "gouwang", "name": "狗王", "type": "萝莉·乐队", "color": "#d86b6b", "on_island": false, "role": "cameo"},
+  {"id": "nianai", "name": "希腊奶", "type": "萝莉·猫系", "color": "#b49ad6", "on_island": true, "role": "support"},
+  {"id": "wuming", "name": "无名", "type": "男娘·无口", "color": "#e8e8f0", "on_island": false, "role": "cameo"},
+  {"id": "dongqing", "name": "東清", "type": "大姐姐·眼镜", "color": "#c9b28a", "on_island": true, "role": "support"},
+  {"id": "junchen", "name": "junzchen", "type": "元气少女", "color": "#7fb8e0", "on_island": false, "role": "cameo"},
+  {"id": "lingdi", "name": "汉灵帝", "type": "温柔大姐姐", "color": "#d9a97c", "on_island": true, "role": "support"},
+  {"id": "qianshi", "name": "茜师傅", "type": "委员长", "color": "#c04a5c", "on_island": true, "role": "suspect"},
+  {"id": "moqie", "name": "莫邪", "type": "中二少女", "color": "#8c6fd6", "on_island": true, "role": "suspect"},
+  {"id": "huaichuai", "name": "怀揣", "type": "假小子·丧系", "color": "#8a9490", "on_island": false, "role": "cameo"},
+  {"id": "bijiang", "name": "高纯度铋", "type": "男娘·审美", "color": "#c8c8d6", "on_island": false, "role": "cameo"},
+  {"id": "laoj", "name": "牢J", "type": "群主", "color": "#e0b84a", "on_island": true, "role": "support"},
+  {"id": "limit", "name": "Time limit", "type": "男娘·高冷", "color": "#6f86c4", "on_island": false, "role": "cameo"}
+]
